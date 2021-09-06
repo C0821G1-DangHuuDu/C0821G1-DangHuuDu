@@ -2,15 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vi du javascript</title>
+    <title>Title</title>
 </head>
 <body>
-<div id="messageDiv"></div>
-<button type="button" onclick="showMessage();">Click Me!</button>
+<form method="get">
+    <label>Nhập tên:</label>
+    <input type="text" name="Ten" placeholder="Nhập tên của bạn" id="name"/>
+    <button type="submit" onclick="showMessage()">Xác nhận</button>
+</form>
+
+</body>
 <script>
-    function showMessage(){
-        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+    function showMessage() {
+        let Name = document.getElementById('name').value;
+        alert("Xin chào " + Name);
     }
 </script>
-</body>
 </html>

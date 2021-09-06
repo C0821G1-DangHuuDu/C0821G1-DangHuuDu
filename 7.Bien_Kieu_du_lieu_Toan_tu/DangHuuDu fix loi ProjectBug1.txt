@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>Nhập tên: </label>
+    <input type="text" placeholder="Nhập tên của bạn" id="name">
+    <button type="submit" onclick="showMessage()">Xác nhận</button>
+</form>
+</body>
+<script>
+    function showMessage() {
+        let name = document.getElementById('ten').value;
+        alert("XIn chào " + name)
+    }
+</script>
+</html>
+--------------------------------------------------------------
+Sai id: let Name = document.getElementById('name').value
+Đoạn mã sau khi sửa
+--------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get">
+    <label>Nhập tên:</label>
+    <input type="text" name="Ten" placeholder="Nhập tên của bạn" id="name"/>
+    <button type="submit" onclick="showMessage()">Xác nhận</button>
+</form>
+
+</body>
+<script>
+    function showMessage() {
+        let Name = document.getElementById('name').value;
+        alert("Xin chào " + Name);
+    }
+</script>
+</html>
