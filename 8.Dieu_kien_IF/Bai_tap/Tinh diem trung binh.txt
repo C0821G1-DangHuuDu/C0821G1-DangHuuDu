@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh diem trung binh</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4">
+            <h1>Nh?p di?m nào:</h1>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" placeholder="Toán" id="t"/>
+        </td>
+        <td>
+            <input type="number" placeholder="lý" id="l"/>
+        </td>
+        <td>
+            <input type="number" placeholder="hóa" id="h"/>
+        </td>
+        <td>
+            <button type="button" onclick="tinhdiem()">Xét di?m</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <h2>Ði?m Trung Bình: </h2>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <h2 id="kq">K?t qu?</h2>
+        </td>
+    </tr>
+</table>
+<script>
+    function tinhdiem() {
+        let toan=parseInt(document.getElementById('t').value);
+        let ly=parseInt(document.getElementById('l').value);
+        let hoa=parseInt(document.getElementById('h').value);
+        let average=(toan+ly+hoa)/3;
+        if (average>=8){
+            document.getElementById('kq').innerHTML=+average+" ->B?n du?c di?m Gi?i"
+        } else if (average>=5){
+            document.getElementById('kq').innerHTML=+average+" ->B?n du?c di?m Khá"
+        } else {
+            document.getElementById('kq').innerHTML=+average+" ->B?n du?c di?m Y?u"
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo máy tính cơ bản</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<table border="1" cellpadding="10" style="border-collapse: collapse">
+    <caption>CALCULATOR</caption>
+    <tr style="background: aquamarine">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td style="background: aquamarine"></td>
+        <td colspan="4"><span id="dis">0</span></td>
+        <td style="background: aquamarine"></td>
+    </tr>
+    <tr>
+        <td style="background: aquamarine"></td>
+        <td onclick="display(1)">1</td>
+        <td onclick="display(2)">2</td>
+        <td onclick="display(3)">3</td>
+        <td onclick="display('+')" style="background: orange">+</td>
+        <td style="background: aquamarine"></td>
+    </tr>
+    <tr>
+        <td style="background: aquamarine"></td>
+        <td onclick="display(4)">4</td>
+        <td onclick="display(5)">5</td>
+        <td onclick="display(6)">6</td>
+        <td onclick="display('-')" style="background: orange">-</td>
+        <td style="background: aquamarine"></td>
+    </tr>
+    <tr>
+        <td style="background: aquamarine"></td>
+        <td onclick="display(7)">7</td>
+        <td onclick="display(8)">8</td>
+        <td onclick="display(9)">9</td>
+        <td onclick="display('x')" style="background: orange">x</td>
+        <td style="background: aquamarine"></td>
+    </tr>
+    <tr>
+        <td style="background: aquamarine"></td>
+        <td onclick="reset()" style="background: orange">C</td>
+        <td onclick="display(0)" style="background: orange">0</td>
+        <td onclick="display('=')" style="background: orange">=</td>
+        <td onclick="display('/')" style="background: orange">/</td>
+        <td style="background: aquamarine"></td>
+    </tr>
+    <tr style="background: aquamarine">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<script>
+    let number = '';
+
+    function display(keyboard) {
+        if (keyboard === '=') {
+            document.getElementById('dis').innerText = eval(number);
+
+        } else {
+            number += keyboard;
+            document.getElementById('dis').innerText = number;
+        }
+
+    }
+    function reset() {
+        document.getElementById('dis').innerText = 0;
+    }
+</script>
+</body>
+</html>
