@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<body>
+<h1>Bài 1: Chuyển từ độ C sang độ F</h1>
+<span>Nhập độ C:</span>
+<input id="temple">
+<p>Chuyển sang độ F là:<span id="kq1"> </span></p>
+<button onclick="check1()">Chuyển đổi</button>
+<br>
+<h1>Bài 2: Chuyển từ mét sang feet:</h1>
+<span>Nhập số met:</span>
+<input id="met">
+<p>Chuyển sang feet:<span id="kq2"> </span></p>
+<button onclick="check2()">Chuyển đổi</button>
+<br>
+<h1>Bài 3: Tính diện tích hình vuông khi biết cạnh a.</h1>
+<span>Nhập cạnh a:</span>
+<input id="squa">
+<p>Diện tích hình vuông là:<span id="kq3"> </span></p>
+<button onclick="check3()">Tính S</button>
+<br>
+<h1>Bài 4: Tính diện tích hình chữ nhật khi biết 02 cạnh a, b.</h1>
+<span>Nhập cạnh a:</span>
+<input id="reca"><br>
+<span>Nhập cạnh b:</span>
+<input id="recb"><br>
+<p>Diện tích hình chữ nhật là:<span id="kq4"> </span></p>
+<button onclick="check4()">Tính S</button>
+<br>
+<h1>Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.</h1>
+<span>Nhập cạnh kề a:</span>
+<input id="tria"><br>
+<span>Nhập cạnh kề b:</span>
+<input id="trib"><br>
+<p>Diện tích hình tam giác vuông là:<span id="kq5"> </span></p>
+<button onclick="check5()">Tính S</button>
+<br>
+<h1>Bài 6: Giải phương trình bậc 1.</h1>
+<p>- Phương trình bậc 1 có dạng ax+b=0</p>
+<span>Nhập số a:</span>
+<input id="pta"><br>
+<span>Nhập số b:</span>
+<input id="ptb"><br>
+<p>Kết quả:<span id="kq6"> </span></p>
+<button onclick="check6()">Tìm nghiệm</button>
+<br>
+<h1>Bài 7: Giải phương trình bậc 2.</h1>
+<p>- Phương trình bậc 2 có dạng ax<sup>2</sup>+bx+c=0</p>
+<span>Nhập số a:</span>
+<input id="pt2a"><br>
+<span>Nhập số b:</span>
+<input id="pt2b"><br>
+<span>Nhập số c:</span>
+<input id="pt2c"><br>
+<p>Kết quả:<span id="kq7"> </span></p>
+<button onclick="check7()">Tìm nghiệm</button>
+<br>
+<h1>Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ
+    120 và lơn hơn 0.</h1>
+<span>Nhập tuổi:</span>
+<input id="age">
+<p>Kết quả:<span id="kq8"> </span></p>
+<button onclick="check8()">Kiểm tra</button>
+<br>
+<h1>Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác. Điều kiện để a,b,c là cạnh của một
+    tam giác là:</h1>
+<span>Nhập cạnh a:</span>
+<input id="tri2a"><br>
+<span>Nhập cạnh b:</span>
+<input id="tri2b"><br>
+<span>Nhập cạnh c:</span>
+<input id="tri2c"><br>
+<p>Kết quả:<span id="kq9"> </span></p>
+<button onclick="check9()">Kiểm tra</button>
+<br>
+<h1>Bài 10: Viết chương trình tính giá điện.</h1>
+<span>Nhập số chữ sử dụng điện:</span>
+<input id="elec">
+<p>Kết quả:<span id="kq10"> </span></p>
+<button onclick="check10()">Kiểm tra</button>
+<br>
+<h1>Bài 11: Viết chương trình tính thuế thu nhập cá nhân.</h1>
+<span>Thu nhập tính thuế TNCN:</span>
+<input id="income"><br>
+<p>Đơn vị tính: triệu đồng</p>
+<p>Thuế TNCN phải nộp:<span id="kq11"> </span></p>
+<button onclick="check11()">Tính thuế</button>
+<br>
+<h1>Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</h1>
+<span>Tổng số tiền vay:</span>
+<input id="lent"><br>
+<span>Số tháng cho vay:</span>
+<input id="month"><br>
+<span>Lãi suất:</span>
+<input id="interestrate"><br>
+
+<p>Số tiền lãi phải trả:<span id="kq12"> </span></p>
+<button onclick="check12()">Tính lãi</button>
+<br>
+
+<script>
+    function check1() {
+        let templeC = parseFloat(document.getElementById('temple').value);
+        let templeF = templeC * 9 / 5 + 32;
+        document.getElementById('kq1').innerText = templeF;
+    }
+
+    function check2() {
+        let met = parseFloat(document.getElementById('met').value);
+        let feet = met * 3.2808;
+        document.getElementById('kq2').innerText = feet;
+    }
+
+    function check3() {
+        let squa = parseFloat(document.getElementById('squa').value);
+        let Ssqua = squa * squa;
+        document.getElementById('kq3').innerText = Ssqua;
+    }
+
+    function check4() {
+        let reca = parseFloat(document.getElementById('reca').value);
+        let recb = parseFloat(document.getElementById('recb').value);
+        let Srec = reca * recb;
+        document.getElementById('kq4').innerText = Srec;
+    }
+
+    function check5() {
+        let tria = parseFloat(document.getElementById('tria').value);
+        let trib = parseFloat(document.getElementById('trib').value);
+        let Stri = (tria * trib) / 2;
+        document.getElementById('kq5').innerText = Stri;
+    }
+
+    function check6() {
+        let pta = parseFloat(document.getElementById('pta').value);
+        let ptb = parseFloat(document.getElementById('ptb').value);
+        let x;
+        if (pta == 0) {
+            if (ptb == 0) {
+                document.getElementById('kq6').innerText = "Phương trình vô số nghiệm";
+            } else {
+                document.getElementById('kq6').innerText = "Phương trình vô nghiệm"
+            }
+        } else {
+            x = (-ptb) / pta
+            document.getElementById('kq6').innerText = "Nghiệm của phương trình là: " + x;
+        }
+    }
+
+    function check7() {
+        let pt2a = parseFloat(document.getElementById('pt2a').value);
+        let pt2b = parseFloat(document.getElementById('pt2b').value);
+        let pt2c = parseFloat(document.getElementById('pt2c').value);
+        let delta = pt2b * pt2b - 4 * pt2a * pt2c;
+        let x1;
+        let x2;
+        if (delta < 0) {
+            document.getElementById('kq7').innerText = "Phương trình vô nghiệm";
+        } else if (delta == 0) {
+            x1 = x2 = (-pt2b) / (2 * pt2a);
+            document.getElementById('kq7').innerText = "Phương trình có nghiệm kép là: x1=x2= " + x1;
+        } else {
+            x1 = (-pt2b + Math.sqrt(delta)) / (2 * pt2a);
+            x2 = (-pt2b - Math.sqrt(delta)) / (2 * pt2a);
+            document.getElementById('kq7').innerText = "Nghiệm của phương trình là: x1= " + x1 + " x2= " + x2;
+        }
+    }
+
+    function check8() {
+        let age = parseInt(document.getElementById('age').value);
+        if (age > 0) {
+            if (age < 120) {
+                document.getElementById('kq8').innerText = "Số tuổi của bạn là: " + age;
+            } else {
+                document.getElementById('kq8').innerText = "Bạn nhập sai số tuổi"
+            }
+        }
+    }
+
+    function check9() {
+        let tri2a = parseInt(document.getElementById('tri2a').value);
+        let tri2b = parseInt(document.getElementById('tri2b').value);
+        let tri2c = parseInt(document.getElementById('tri2c').value);
+        if (tri2a > 0 && tri2b > 0 && tri2c > 0 && tri2a + tri2b > tri2c && tri2a + tri2c > tri2b && tri2b + tri2c > tri2a) {
+            document.getElementById('kq9').innerText = "3 số (a,b,c) là cạnh của 1 tam giác";
+        } else {
+            document.getElementById('kq9').innerText = "3 số (a,b,c) không phải là cạnh của 1 tam giác";
+        }
+    }
+
+    function check10() {
+        let elec = parseFloat(document.getElementById('elec').value);
+        let elecfare;
+        if (elec <= 100) {
+            elecfare = 500 * elec;
+            document.getElementById('kq10').innerText = elecfare;
+         } else if (elec <= 250) {
+        elecfare =  (800 * (elec - 100)) + 500 * 100;
+        document.getElementById('kq10').innerText = elecfare;
+    } else if (elec <= 350){
+        elecfare = 800 * 150 + 500 * 100 + 1000 * (elec - 250);
+        document.getElementById('kq10').innerText = elecfare;
+    } else {
+            elecfare = 1000 * 100+800 * 150 + 500 * 100 + 1500 * (elec - 350);
+            document.getElementById('kq10').innerText = elecfare;
+        }
+    }
+    function check11() {
+        let income = parseInt(document.getElementById('income').value);
+        let tax;
+        if (income <= 5) {
+            tax = 0.05 * income;
+            document.getElementById('kq11').innerText = tax;
+        } else if (income <= 10) {
+            tax = 0.1 * income-0.25;
+            document.getElementById('kq11').innerText = tax;
+        } else if (income <= 18){
+            tax = 0.15 * income-0.75;
+            document.getElementById('kq11').innerText = tax;
+        } else if (income <= 32){
+            tax = 0.2 * income-1.65;
+            document.getElementById('kq11').innerText = tax;
+        }else if (income <= 52) {
+            tax = 0.25 * income - 3.25;
+            document.getElementById('kq11').innerText = tax;
+        }
+        else if (income <= 80) {
+            tax = 0.3 * income - 5.85;
+            document.getElementById('kq11').innerText = tax;
+        }else {
+            tax = 0.35 * income - 9.85;
+            document.getElementById('kq11').innerText = tax;
+        }
+    }
+    function check12() {
+        let lent = parseFloat(document.getElementById('lent').value);
+        let month = parseFloat(document.getElementById('month').value);
+        let interestrate = parseFloat(document.getElementById('interestrate').value);
+        let total = lent * Math.pow((1+(interestrate/12)),month);
+        let interest=total-lent;
+        document.getElementById('kq12').innerText = interest;
+    }
+
+</script>
+</body>
+</html>

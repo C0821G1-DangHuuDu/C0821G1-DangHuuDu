@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Sự kiện chuột</title>
+</head>
+<body>
+
+<img src="thuviendohoa.vn_454.png" id="ball" width="300" height="200" style="position: relative">
+<p><strong>Click button below to move the image to right</strong></p>
+<button type="button" onclick="move()">Click Me!</button>
+
+<script>
+    let pos = 0
+    let img = document.getElementById('ball');
+    function move() {
+         pos += 10;
+        img.style.left = pos + 'px';
+    }
+
+    // var tanggiam = 10;
+    // var pos = 0;
+    // var box = document.getElementById("ball");
+    //
+    // // var t = setInterval(move, 10);
+    //
+    // function move() {
+    //     // if ((pos > 150) || (pos < 0)) {
+    //     //     tanggiam = (-tanggiam);
+    //     // }
+    //     pos += tanggiam;
+    //     box.style.left = pos + "px";
+    // }
+
+</script>
+</body>
+</html>

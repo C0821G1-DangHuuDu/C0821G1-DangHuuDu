@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+<h1>Tính chỉ số cân nặng của cơ thể</h1>
+<span>Nhập vào số cân nặng của bạn (đơn vị tính Kg):</span>
+<input type="text" id="weight"><br>
+<span>Nhập vào số chiều cao của bạn(đơn vị tính met):</span>
+<input type="text" id="tall"><br>
+<p>Chỉ số cơ thể BMI: <span id="bmi"> </span></p>
+<p>Kết quả: <span id="result"> </span></p>
+<button onclick="tinh()">Tinh BMI</button>
+
+<script>
+    function tinh() {
+        let weight = parseFloat(document.getElementById('weight').value);
+        let tall = parseFloat(document.getElementById('tall').value);
+        let bmi = weight / (Math.pow(tall, 2));
+        document.getElementById('bmi').innerText = +bmi
+        if (bmi < 18.5) {
+            document.getElementById('result').innerText = "Underweight";
+        } else if (bmi < 25) {
+            document.getElementById('result').innerText = "Normal";
+        } else if (bmi < 30) {
+            document.getElementById('result').innerText = "Overweight";
+        } else {
+            document.getElementById('result').innerText = "Obese";
+        }
+    }
+</script>
+</body>
+</html>

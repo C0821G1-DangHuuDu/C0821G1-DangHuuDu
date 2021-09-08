@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+<h1>Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không</h1>
+<span>Nhập vào số a: </span>
+<input id="a"><br>
+<span>Nhập vào số b:</span>
+<input id="b">
+<p>Kết quả:<span id="kq1"> </span></p>
+<button onclick="check1()">Kiểm tra</button>
+<br>
+<h1>Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.</h1>
+<span>Nhập số tuổi của học sinh:</span>
+<input id="age">
+<p>Kết quả:<span id="kq2"> </span></p>
+<button onclick="check2()">Kiểm tra</button>
+<br>
+<h1>Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0</h1>
+<span>Nhập số nguyên bất kỳ:</span>
+<input id="num">
+<p>Kết quả:<span id="kq3"> </span></p>
+<button onclick="check3()">Kiểm tra</button>
+<br>
+<h1>Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó</h1>
+<span>Nhập số nguyên thứ 1:</span>
+<input id="num1"><br>
+<span>Nhập số nguyên thứ 2:</span>
+<input id="num2"><br>
+<span>Nhập số nguyên thứ 3:</span>
+<input id="num3"><br>
+<p>Kết quả:<span id="kq4"> </span></p>
+<button onclick="check4()">Kiểm tra</button>
+<br>
+<h1>Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</h1>
+<span>Nhập điểm bài kiểm tra:</span>
+<input id="point1"><br>
+<span>Nhập điểm thi giữa kỳ:  </span>
+<input id="point2"><br>
+<span>Nhập điểm thi cuối kỳ:  </span>
+<input id="point3"><br>
+<p>Kết quả:<span id="kq5"> </span></p>
+<button onclick="check5()">Kiểm tra</button>
+<br>
+<h1>Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</h1>
+<span>Nhập doanh số:</span>
+<input id="revenue">
+<p>Hoa hồng nhận được là:<span id="kq6"> </span></p>
+<button onclick="check6()">Kiểm tra</button>
+<br>
+<h1>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</h1>
+<span>Nhập số phút đã sử dụng:</span>
+<input id="minute">
+<p>Cước điện thoại là:<span id="kq7"> </span></p>
+<button onclick="check7()">Kiểm tra</button>
+<br>
+
+
+
+
+
+
+
+
+<script>
+    function check1() {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+        let c = a % b;
+        if (c == 0) {
+            document.getElementById('kq1').innerText = "a chia hết cho b";
+        } else {
+            document.getElementById('kq1').innerText = "a không chia hết cho b";
+        }
+    }
+
+    function check2() {
+        let age = parseInt(document.getElementById('age').value);
+        if (age >= 15) {
+            document.getElementById('kq2').innerText = " Đủ tuổi vào lớp 10";
+        } else {
+            document.getElementById('kq2').innerText = " Không đủ tuổi vào lớp 10";
+        }
+    }
+    function check3() {
+        let num = parseInt(document.getElementById('num').value);
+        if (num >0) {
+            document.getElementById('kq3').innerText =+num+ " lớn hơn 0";
+        } else if (num <0){
+            document.getElementById('kq3').innerText =+num+ " nhỏ hơn 0";
+        } else {
+            document.getElementById('kq3').innerText =+num+ " bằng 0";
+        }
+    }
+    function check4() {
+        let num1 = parseInt(document.getElementById('num1').value);
+        let num2 = parseInt(document.getElementById('num2').value);
+        let num3 = parseInt(document.getElementById('num3').value);
+        if (num1 > num2 && num1 > num3) {
+            document.getElementById('kq4').innerText = "Số "+num1+" là số lớn nhất";
+        } else if (num2 > num1 && num2 > num3){
+            document.getElementById('kq4').innerText = "Số "+num2+" là số lớn nhất";
+        }else{
+            document.getElementById('kq4').innerText = "Số "+num3+" là số lớn nhất";
+        }
+    }
+    function check5() {
+        let point1 = parseFloat(document.getElementById('point1').value);
+        let point2 = parseFloat(document.getElementById('point2').value);
+        let point3 = parseFloat(document.getElementById('point3').value);
+        let average =(point1+point2+point3*2)/4
+        if (average>=9) {
+            document.getElementById('kq5').innerText = "Điểm trung bình là: "+average+" -> Xếp loại A";
+        } else if (average>=7){
+            document.getElementById('kq5').innerText = "Điểm trung bình là: "+average+" -> Xếp loại B";
+        }else if (average>=5){
+            document.getElementById('kq5').innerText = "Điểm trung bình là: "+average+" -> Xếp loại C";
+        }else {
+            document.getElementById('kq5').innerText = "Điểm trung bình là: "+average+" -> Xếp loại F";
+        }
+    }
+    function check6() {
+        let revenue = parseInt(document.getElementById('revenue').value);
+        let commission;
+        if (revenue <= 100000000) {
+            commission = revenue * 0.05;
+            document.getElementById('kq6').innerText = commission;
+        } else if (revenue <= 300000000) {
+            commission = revenue * 0.1;
+            document.getElementById('kq6').innerText = commission;
+        } else {
+            commission = revenue * 0.2;
+            document.getElementById('kq6').innerText = commission;
+        }
+    }
+    function check7() {
+        let minute = parseFloat(document.getElementById('minute').value);
+        const fixfare=25000
+        let fare;
+        if (minute <= 50) {
+            fare = fixfare+ (600*minute);
+            document.getElementById('kq7').innerText = fare;
+        } else if (minute <= 200) {
+            fare = fixfare+ (400*(minute-50))+600*50;
+            document.getElementById('kq7').innerText = fare;
+        } else {
+            fare = fixfare+ 400*150+600*50 +200*((minute-200));
+            document.getElementById('kq7').innerText = fare;
+        }
+    }
+</script>
+</body>
+</html>

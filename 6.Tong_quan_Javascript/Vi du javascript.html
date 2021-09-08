@@ -5,17 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-<form method="get">
-    <label>Nhập tên:</label>
-    <input type="text" name="Ten" placeholder="Nhập tên của bạn" id="name"/>
-    <button type="submit" onclick="showMessage()">Xác nhận</button>
-</form>
+<!--<form method="get">-->
+<!--    <label>Nhập tên:</label>-->
+<!--    <input type="text" name="Ten" placeholder="Nhập tên của bạn" id="name"/>-->
+<!--    <button type="submit" onclick="showMessage()">Xác nhận</button>-->
+<!--</form>-->
 
 </body>
 <script>
-    function showMessage() {
-        let Name = document.getElementById('name').value;
-        alert("Xin chào " + Name);
+    // function showMessage() {
+    //     let Name = document.getElementById('name').value;
+    //     alert("Xin chào " + Name);
+    // }
+
+    let a= parseInt(prompt('Nhập số 1'));
+    let b= parseInt(prompt('Nhập số 2'));
+    let c= parseInt(prompt('Nhập số 3'));
+    if(a>=b){
+        if(a>=c){
+            document.write('Số lớn nhất là'+ a)
+        }
+        else {
+            document.write('Số lớn nhất là'+ c)
+        }
     }
+    else if (b<=c){
+        document.write('Số lớn nhất là'+c)
+    }
+    else {
+        document.write('Số lớn nhất là' + b)
+    }
+
+
+
 </script>
 </html>
