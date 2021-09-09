@@ -3,8 +3,64 @@
   <component name="ChangeListManager">
     <list default="true" id="b8ba3cea-3163-4c68-b680-063db159fb75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.Tong_quan_Javascript/Vi du javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/6.Tong_quan_Javascript/Vi du javascript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tạo máy tính cơ bản.html" beforeDir="false" afterPath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tạo máy tính cơ bản.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.Hoan_thanh_khoa_hoc_tren_code.org/Course 1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.Hoan_thanh_khoa_hoc_tren_code.org/Course 2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.Hoan_thanh_khoa_hoc_tren_code.org/Course 3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.Hoan_thanh_khoa_hoc_tren_code.org/Course 4.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán chuyển đổi tiền tệ.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán có cấu trúc điều kiện.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán tìm giá trị lớn nhất trong 3 số.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán tìm giá trị lớn nhất trong một dãy số.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán tính điểm trung bình - Copy.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Thuc_hanh/[Thực hành] Thuật toán chuyển đổi nhiệt độ - Copy.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Thuc_hanh/[Thực hành] Thuật toán game đoán số.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.Git_va_HTML/Bai_tap/[Bài tập] Tạo danh sách.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.Git_va_HTML/Bai_tap/[Bài tập] Tạo trang CV cá nhân.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.Git_va_HTML/Bai_tap/o to.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.Git_va_HTML/Thuc_hanh/[Thực hành] Sử dụng thẻ HTML cơ bản.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Bai_tap/[Bài tập] Tạo bảng nâng cao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Bai_tap/[Bài tập] Tạo bảng đơn giản.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Bai_tap/[Bài tập] Tạo form lấy survey khách hàng.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Bai_tap/[Bài tập] Tạo form đơn giản.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Thuc_hanh/[Thực hành] Tạo bảng cơ bản.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Thuc_hanh/[Thực hành] Tạo bảng nâng cao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Thuc_hanh/[Thực hành] Tạo form cơ bản.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Thuc_hanh/[Thực hành] Tạo một form tìm kiếm Google.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Vi du 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Vi du 3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Vi du.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.Tong_quan_Javascript/Thuc_hanh/[Thực hành] Hiển thị đầu ra.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.Tong_quan_Javascript/Thuc_hanh/[Thực hành] Nhúng JavaScript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.Tong_quan_Javascript/Vi du javascript.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Bai_tap/[Bài tập] Biến, kiểu dữ liệu và toán tử.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Bai_tap/[Bài tập] Ứng dụng chuyển đổi tiền tệ.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Bai_tap/[Bài tập] Ứng dụng máy tính.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/DangHuuDu fix loi ProjectBug1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Thuc_hanh/[Thực hành] Khai báo và sử dụng biến.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Thuc_hanh/[Thực hành] Sử dụng toán tử.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tinh diem trung binh.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tinh diem trung binh.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tinh diem trung binh.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tạo máy tính cơ bản.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Câu lệnh switch-case.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Game puzzle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Luyện tập cấu trúc điều kiện 01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Luyện tập cấu trúc điều kiện 02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Tính chỉ số cân nặng của cơ thể.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Ứng dụng vui DoYouLoveMe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/mau-vang-chanh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/mau-xanh-lam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/xanhlacay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Kiểm tra năm nhuận.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc if...else...if.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc if/else.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc switch-case Bai 1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc switch-case Bai 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc switch-case Bai 3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với toán tử ba ngôi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Sự kiện bàn phím.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Sự kiện chuột.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/thuviendohoa.vn_454.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +117,9 @@
       <workItem from="1630987108108" duration="15692000" />
       <workItem from="1631028151608" duration="3436000" />
       <workItem from="1631064304727" duration="23083000" />
-      <workItem from="1631102121898" duration="11181000" />
+      <workItem from="1631102121898" duration="11841000" />
+      <workItem from="1631149354504" duration="12177000" />
+      <workItem from="1631200405723" duration="1016000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Sử dụng vòng lặp while Bai 1</title>
+</head>
+<body>
+<h1>Bài 1: Viết chương trình nhận vào một số từ hộp thoại, việc nhập kết thúc khi người dùng nhập vào giá trị -1.<br> Mỗi giá trị nhập được sẽ được hiển thị ra và thực hiện tính tổng các giá trị đó. </h1>
+<script>
+    let num=parseFloat(prompt("Enter a number: "));
+    let total = 0
+    while(num!=-1) {
+        document.write("You entered number:" + num + "<br>");
+        total += num;
+        num=parseFloat(prompt("Enter a number: "));
+    }
+    document.write("Total of numbers: "+total)
+</script>
+</body>
+</html>

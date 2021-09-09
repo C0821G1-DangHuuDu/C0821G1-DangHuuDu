@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng vui DoYouLoveMe</title>
+</head>
+<body>
+<h1>Do you love me?</h1>
+<button onclick="agree()" id="yes">YES</button>
+<button onmouseover="jump()" id="no" style="position: relative">NO</button>
+
+<script>
+    function jump() {
+        let x=Math.random()*window.innerWidth;
+        let y=Math.random()*window.innerHeight;
+
+        document.getElementById('no').style.left=x+'px';
+        document.getElementById('no').style.top=y+'px';
+    }
+    function agree() {
+        alert("I love you too")
+    }
+</script>
+</body>
+</html>
