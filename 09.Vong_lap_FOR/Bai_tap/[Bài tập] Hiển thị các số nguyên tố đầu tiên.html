@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<h4>[Bài tập] Hiển thị các số nguyên tố đầu tiên</h4>
+<span>Nhập vào số lượng số nguyên tố bạn muốn hiển thị:</span>
+<input id="qualtity">
+<p>Hiện thị các số nguyên tố bạn chọn: <br><span id="display"></span></p>
+<button onclick="display()">Hiển thị</button>
+
+<script>
+    function display() {
+        let qualtity = parseInt(document.getElementById('qualtity').value);
+        let count = 0;
+
+        for (let n = 2; count < qualtity; n++) {
+            let check = true;
+            for (let i = 2; i < n; i++) {
+                if (n % i === 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check === true) {
+                count = count + 1;
+                document.getElementById('display').innerHTML += n + "<br>";
+            }
+        }
+    }
+
+</script>
+
+
+</body>
+</html>

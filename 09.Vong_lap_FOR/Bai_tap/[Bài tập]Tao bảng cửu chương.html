@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Tạo bảng cửu chương</title>
+</head>
+<body>
+<script>
+    let table;
+    table = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+
+    for (let i = 2; 1 < 10; i++) {
+        table = table + "<tr>";
+        for (let j = 1; j < 10; j++) {
+            table = table + '<td>'+ i + "x" + j + "=" + (i * j) + '</td>';
+        }
+        table = table + "</tr>";
+    }
+    table = table + "</table>";
+    document.write(table);
+</script>
+</body>
+</html>

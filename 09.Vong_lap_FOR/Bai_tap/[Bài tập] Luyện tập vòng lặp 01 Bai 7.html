@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập vòng lặp 01 Bai 7</title>
+</head>
+<body>
+<h3>Bài 7: Hãy viết một chương trình in ra các số từ 1 đến 100. <br>
+    Nhưng nếu số chia hết cho 3 thì in ra "Fizz", 5 thì in ra "Buzz" thay vì in ra số đó. <br>
+    Và nếu số đó chia hết cho cả 3 và 5 thì in ra chữ "FizzBuzz".</h3>
+<p id="result1"></p>
+
+<script>
+    for (let i=1;i<=100;i++) {
+
+        if (i % 3 === 0 && i % 5 === 0) {
+            document.getElementById('result1').innerHTML +=  "FizzBuzz" + "<br>";
+        } else if (i % 3 === 0) {
+            document.getElementById('result1').innerHTML +=   "Fizz" + "<br>";
+        } else if (i % 5 === 0) {
+            document.getElementById('result1').innerHTML +=  "Buzz" + "<br>";
+        }else {
+            document.getElementById('result1').innerHTML += i + "<br>";
+        }
+
+    }
+</script>
+</body>
+</html>

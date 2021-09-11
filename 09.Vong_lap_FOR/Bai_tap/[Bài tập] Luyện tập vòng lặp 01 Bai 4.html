@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập vòng lặp 01 Bai 4</title>
+</head>
+<body>
+<h4>Bài 4: Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.</h4>
+<script>
+    let a = 0;
+    let b = 1;
+    let total = a + b;
+    let c;
+
+    for (let i = 1; i < 20; i++) {
+        a = b;
+        b = total;
+        total = a + b;
+        c=total%5;
+        if (c===0) {
+            document.write("Số đầu tiên chia hết cho 5 trong dãy fibonacci là: "+ total);
+            break;
+        }
+    }
+</script>
+</body>
+</html>

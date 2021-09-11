@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập vòng lặp 01 Bai 1</title>
+</head>
+<body>
+<h3>Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập. <br>
+    Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ.<br>
+    Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ. Kết thúc chương trình khi nhập -1</h3>
+<p id="result2"></p>
+<script>
+    let tem;
+    while (tem != -1) {
+        if (tem < 20) {
+            alert("Bạn hãy tăng nhiệt độ lên")
+        } else if (tem > 100) {
+            alert("Bạn hãy giảm nhiệt độ xuống")
+        }
+        tem = parseInt(prompt("Nhập vào nhiệt độ: "));
+    }
+</script>
+</body>
+</html>

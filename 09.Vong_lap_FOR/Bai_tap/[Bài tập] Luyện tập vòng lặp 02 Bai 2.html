@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập vòng lặp 02 Bai 1</title>
+</head>
+<body>
+<h3>Bài 2: Tính giai thừa của một số nguyên dương</h3>
+<span>Nhập vào số cần tính giai thừa:</span>
+<input id="num"/><br>
+<p>Giai thừa là:<span id="result1"></span></p>
+<button onclick="cal()">Tính</button>
+<script>
+    let fact = 1;
+    function cal() {
+        let n = parseInt(document.getElementById('num').value);
+        for (let i = 1; i <= n; i++) {
+        fact=fact*i;
+        }
+        document.getElementById('result1').innerText=fact;
+    }
+</script>
+</body>
+</html>

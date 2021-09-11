@@ -3,64 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b8ba3cea-3163-4c68-b680-063db159fb75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.Hoan_thanh_khoa_hoc_tren_code.org/Course 1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.Hoan_thanh_khoa_hoc_tren_code.org/Course 2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.Hoan_thanh_khoa_hoc_tren_code.org/Course 3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.Hoan_thanh_khoa_hoc_tren_code.org/Course 4.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán chuyển đổi tiền tệ.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán có cấu trúc điều kiện.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán tìm giá trị lớn nhất trong 3 số.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán tìm giá trị lớn nhất trong một dãy số.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Bai_tap/[Bài tập] Mô tả thuật toán tính điểm trung bình - Copy.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Thuc_hanh/[Thực hành] Thuật toán chuyển đổi nhiệt độ - Copy.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3.Mo_ta_thuat_toan_bang_Pseudo_code_va_Flowchart/Thuc_hanh/[Thực hành] Thuật toán game đoán số.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.Git_va_HTML/Bai_tap/[Bài tập] Tạo danh sách.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.Git_va_HTML/Bai_tap/[Bài tập] Tạo trang CV cá nhân.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.Git_va_HTML/Bai_tap/o to.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.Git_va_HTML/Thuc_hanh/[Thực hành] Sử dụng thẻ HTML cơ bản.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Bai_tap/[Bài tập] Tạo bảng nâng cao.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Bai_tap/[Bài tập] Tạo bảng đơn giản.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Bai_tap/[Bài tập] Tạo form lấy survey khách hàng.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Bai_tap/[Bài tập] Tạo form đơn giản.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Thuc_hanh/[Thực hành] Tạo bảng cơ bản.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Thuc_hanh/[Thực hành] Tạo bảng nâng cao.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Thuc_hanh/[Thực hành] Tạo form cơ bản.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Thuc_hanh/[Thực hành] Tạo một form tìm kiếm Google.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Vi du 2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Vi du 3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5.HTML_Form_và_Table/Vi du.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.Tong_quan_Javascript/Thuc_hanh/[Thực hành] Hiển thị đầu ra.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.Tong_quan_Javascript/Thuc_hanh/[Thực hành] Nhúng JavaScript.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6.Tong_quan_Javascript/Vi du javascript.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Bai_tap/[Bài tập] Biến, kiểu dữ liệu và toán tử.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Bai_tap/[Bài tập] Ứng dụng chuyển đổi tiền tệ.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Bai_tap/[Bài tập] Ứng dụng máy tính.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/DangHuuDu fix loi ProjectBug1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Thuc_hanh/[Thực hành] Khai báo và sử dụng biến.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7.Bien_Kieu_du_lieu_Toan_tu/Thuc_hanh/[Thực hành] Sử dụng toán tử.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tinh diem trung binh.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tinh diem trung binh.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tinh diem trung binh.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/Tạo máy tính cơ bản.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Câu lệnh switch-case.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Game puzzle.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Luyện tập cấu trúc điều kiện 01.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Luyện tập cấu trúc điều kiện 02.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Tính chỉ số cân nặng của cơ thể.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/[Bài tập] Ứng dụng vui DoYouLoveMe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/mau-vang-chanh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/mau-xanh-lam.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Bai_tap/xanhlacay.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Kiểm tra năm nhuận.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc if...else...if.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc if/else.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc switch-case Bai 1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc switch-case Bai 2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với cấu trúc switch-case Bai 3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Luyện tập với toán tử ba ngôi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Sự kiện bàn phím.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/[Thực hành] Sự kiện chuột.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8.Dieu_kien_IF/Thuc_hanh/thuviendohoa.vn_454.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +33,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../may_tinh.js" />
   </component>
+  <component name="RunManager" selected="JavaScript Debug.[Bài tập] Luyện tập vòng lặp 01 Bai 3.html">
+    <configuration name="[Bài tập] Luyện tập vòng lặp 01 Bai 2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Modul 1/09.Vong_lap_FOR/Bai_tap/[Bài tập] Luyện tập vòng lặp 01 Bai 2.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="[Bài tập] Luyện tập vòng lặp 01 Bai 3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Modul 1/09.Vong_lap_FOR/Bai_tap/[Bài tập] Luyện tập vòng lặp 01 Bai 3.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="[Bài tập] Sinh bảng cửu chương.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Modul 1/09.Vong_lap_FOR/Bai_tap/[Bài tập] Sinh bảng cửu chương.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.[Bài tập] Luyện tập vòng lặp 01 Bai 3.html" />
+        <item itemvalue="JavaScript Debug.[Bài tập] Luyện tập vòng lặp 01 Bai 2.html" />
+        <item itemvalue="JavaScript Debug.[Bài tập] Sinh bảng cửu chương.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -119,7 +79,12 @@
       <workItem from="1631064304727" duration="23083000" />
       <workItem from="1631102121898" duration="11841000" />
       <workItem from="1631149354504" duration="12177000" />
-      <workItem from="1631200405723" duration="1016000" />
+      <workItem from="1631200405723" duration="6839000" />
+      <workItem from="1631235229678" duration="3903000" />
+      <workItem from="1631246244883" duration="20810000" />
+      <workItem from="1631286521337" duration="1142000" />
+      <workItem from="1631323985451" duration="8904000" />
+      <workItem from="1631346796773" duration="10466000" />
     </task>
     <servers />
   </component>
@@ -127,9 +92,81 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631243028413">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1631243028413" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1631031001527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1631031001527" />
+    <state width="1308" height="195" key="GridCell.Tab.0.bottom" timestamp="1631271449741">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1631271449741" />
+    <state width="1308" height="195" key="GridCell.Tab.0.center" timestamp="1631271449741">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1631271449741" />
+    <state width="1308" height="195" key="GridCell.Tab.0.left" timestamp="1631271449740">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1631271449740" />
+    <state width="1308" height="195" key="GridCell.Tab.0.right" timestamp="1631271449741">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1631271449741" />
+    <state width="1308" height="195" key="GridCell.Tab.1.bottom" timestamp="1631271449742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1631271449742" />
+    <state width="1308" height="195" key="GridCell.Tab.1.center" timestamp="1631271449742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1631271449742" />
+    <state width="1308" height="195" key="GridCell.Tab.1.left" timestamp="1631271449741">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1631271449741" />
+    <state width="1308" height="195" key="GridCell.Tab.1.right" timestamp="1631271449742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1631271449742" />
+    <state width="1308" height="195" key="GridCell.Tab.2.bottom" timestamp="1631271449743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1631271449743" />
+    <state width="1308" height="195" key="GridCell.Tab.2.center" timestamp="1631271449742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1631271449742" />
+    <state width="1308" height="195" key="GridCell.Tab.2.left" timestamp="1631271449742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1631271449742" />
+    <state width="1308" height="195" key="GridCell.Tab.2.right" timestamp="1631271449742">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1631271449742" />
+    <state width="1308" height="195" key="GridCell.Tab.3.bottom" timestamp="1631271449743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1631271449743" />
+    <state width="1308" height="195" key="GridCell.Tab.3.center" timestamp="1631271449743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1631271449743" />
+    <state width="1308" height="195" key="GridCell.Tab.3.left" timestamp="1631271449743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1631271449743" />
+    <state width="1308" height="195" key="GridCell.Tab.3.right" timestamp="1631271449743">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1308" height="195" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1631271449743" />
+    <state x="466" y="85" key="RollbackChangesDialog" timestamp="1631248661980">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="85" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631248661980" />
   </component>
 </project>

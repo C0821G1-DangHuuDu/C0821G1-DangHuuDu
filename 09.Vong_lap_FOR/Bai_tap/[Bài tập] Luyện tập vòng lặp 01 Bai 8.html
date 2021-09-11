@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập vòng lặp 01 Bai 8</title>
+</head>
+<body>
+<button onclick="play()" id="again">Chơi</button>
+<p id="kq"></pid>
+    <script>
+
+        // let a = parseInt(prompt("Bạn muốn đoán từ số:"));
+        // let b = parseInt(prompt("Bạn muốn đoán đến số:"));
+        //
+        // function play() {
+        //     let x = Math.floor(Math.random() * (b - a + 1)) + a;
+        //     document.getElementById('kq').innerText = x;
+        // }
+
+        function play() {
+            let a=parseInt(prompt("Bạn muốn đoán từ số:"));
+            let b=parseInt(prompt("Bạn muốn đoán đến số:"));
+            let x=Math.floor(Math.random()*(b-a+1))+a;
+            document.getElementById('kq').innerText = x;
+
+            for (let i=1;i<=3;i++){
+                var c=parseInt(prompt("Nhập vào số bạn muốn đoán từ số "+a+" đến số "+b+" là: "));
+                if (c===x){
+                    alert("Chúc mừng bạn đã đoán đúng");
+                    break;
+                }else if (c<x){
+                    alert("Số bạn đoán nhỏ hơn số của chương trình mời bạn đoán lại");
+                }else if (c>x){
+                    alert("Số bạn đoán lớn hơn số của chương trình mời bạn đoán lại");
+                }
+            }
+            // console.log(x)
+            // console.log(c)
+            if(c===x){
+                confirm("Bạn có muốn chơi lại không");
+            }else {
+                alert("Bạn đã hết lượt đoán");
+            }
+        }
+    </script>
+</body>
+</html>
