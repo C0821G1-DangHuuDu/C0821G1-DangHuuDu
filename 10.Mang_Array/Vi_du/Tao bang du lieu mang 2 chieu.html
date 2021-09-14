@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao bang du lieu mang 2 chieu</title>
+</head>
+<body>
+
+<!--<script>-->
+<!--    let arr = new Array(3);-->
+<!--    for (let i = 0; i < arr.length; i++) {-->
+<!--        arr[i] = new Array(2);-->
+<!--    }-->
+<!--    for (let i = 0; i < arr.length; i++) {-->
+<!--        for (let j = 0; j < arr[i].length; j++) {-->
+<!--            arr[i][j] = prompt('Nhập vào giá trị ');-->
+<!--        }-->
+<!--    }-->
+<!--    console.log(arr)-->
+<!--</script>-->
+
+
+<script>
+    let arr2D = new Array(3);
+    for (let i = 0; i < arr2D.length; i++) {
+        arr2D[i] = new Array(2);
+    }
+
+    var sOut = "<table border=2>";
+    for (let x = 0; x < arr2D.length; x++) {
+        sOut += "<tr>";
+        for (let y = 0; y < arr2D[x].length; y++) {
+            arr2D[x][y] = prompt("Nhập vào phần tử trong mảng tại vị tri x: " + x + " và y: " + y);
+            sOut += "<td>" + arr2D[x][y] + "</td>";
+        }
+        sOut += "</tr>";
+    }
+    sOut += "</table>";
+    console.log(arr2D);
+    document.write(sOut);
+</script>
+
+</body>
+</html>

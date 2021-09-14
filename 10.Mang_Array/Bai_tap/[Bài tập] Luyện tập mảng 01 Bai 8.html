@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập mảng 01 Bài 8</title>
+</head>
+<body>
+<span>Nhập vào mảng số nguyên gồm 10 phần tử:</span>
+<br>
+<button onclick="add()">Thêm</button>
+<br>
+<button onclick="arrange()">Sắp xếp</button>
+<p>Kết quả : <span id="sum"></span></p>
+<script>
+    let arrnum = new Array(10);
+    let a = arrnum.length;
+    let num;
+    function add() {
+        for (let i = 0; i < a; i++) {
+            num = parseInt(prompt("Bạn hãy nhập số thứ " + (i + 1)));
+            arrnum[i] = num;
+        }
+    }
+    function arrange() {
+        arrnum.sort(function (a,b){
+        return b-a;
+        });
+        console.log(arrnum);
+        document.getElementById('sum').innerText=arrnum;
+    }
+</script>
+</body>
+</html>

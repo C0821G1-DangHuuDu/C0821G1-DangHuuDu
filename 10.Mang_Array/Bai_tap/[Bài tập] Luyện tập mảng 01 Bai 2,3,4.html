@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập mảng 01 Bai 2</title>
+</head>
+<body>
+<h4>Bài 2,3,4- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. <br>
+    Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.<br>
+    In ra giá trị trung bình của các phần tử trong mảng.</h4>
+<span>Nhập vào mảng số nguyên gồm 10 phần tử khác nhau:</span>
+<br>
+<button onclick="add()">Thêm</button>
+<button onclick="display()">Tính</button>
+<p>Trong mảng vừa nhập số lớn nhất là : <span id="sum"></span></p>
+<p>Giá trị trung bình : <span id="average"></span></p>
+
+
+<script>
+    let arrnum = new Array(3);
+    let a = arrnum.length;
+    let num;
+
+    function add() {
+        for (let i = 0; i < a; i++) {
+            num = parseInt(prompt("Bạn hãy nhập số thứ " + (i + 1)));
+            arrnum[i] = num;
+        }
+    }
+
+    console.log(arrnum);
+
+    function display() {
+        let max = arrnum[0];
+        let index = 0;
+        let sum = 0;
+        let average;
+        for (let i = 1; i < arrnum.length; i++) {
+            if (arrnum[i] >= max) {
+                max = arrnum[i];
+                index = i
+            }
+            sum += arrnum[i]
+        }
+        average = sum / arrnum.length;
+        document.getElementById('sum').innerHTML = max + " tại vị trí index là " + index;
+        document.getElementById('average').innerHTML = average;
+        console.log(arrnum.reverse());
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vi du</title>
+</head>
+<body>
+<h1><strong> Đề thuật toán</strong></h1>
+<span>Nhấn nút "Thêm" để nhập vào mảng ký tự:</span>
+<br>
+<button onclick="add()">Thêm</button>
+<button onclick="display()">Tính</button>
+<br>
+<span>Nhập vào số cần kiểm tra:</span>
+<input id="input">
+<p>Số lần số <span id="num"></span> xuất hiện trong chuỗi là : <span id="sum"></span> lần</p>
+<script>
+    let arrnum = new Array();
+    let num;
+    let count = 0;
+
+    function add() {
+        while(num!==-1) {
+            let i=arrnum.length;
+            num = parseInt(prompt("Bạn hãy nhập số thứ " + (i + 1)));
+            arrnum[i] = num;
+        }
+    }
+    function display() {
+        let a=parseInt(document.getElementById('input').value);
+        for(i=0;i<arrnum.length;i++){
+            if(a===arrnum[i]){
+                count +=1;
+            }
+        }
+        document.getElementById('num').innerText=a;
+        document.getElementById('sum').innerText=count;
+    }
+</script>
+</body >
+</html>

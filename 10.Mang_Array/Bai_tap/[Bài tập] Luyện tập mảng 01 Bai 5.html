@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập mảng 01 Bai 5</title>
+</head>
+<body>
+<h4>Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi</h4>
+<span>Nhập vào mảng số nguyên gồm 10 phần tử khác nhau:</span>
+<br>
+<button onclick="add()">Thêm</button>
+<button onclick="display()">Tính</button>
+<p>Số lượng số nguyên âm trong chuỗi là : <span id="sum"></span></p>
+<script>
+    let arrnum = new Array(3);
+    let a = arrnum.length;
+    let num;
+    let count = 0;
+
+    function add() {
+        for (let i = 0; i < a; i++) {
+            num = parseInt(prompt("Bạn hãy nhập số thứ " + (i + 1)));
+            arrnum[i] = num;
+        }
+    }
+
+    function display() {
+
+        for (let i = 0; i < arrnum.length; i++) {
+            if (arrnum[i] < 0) {
+                count += 1;
+            }
+        }
+
+        document.getElementById('sum').innerHTML = count;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập mảng 02 Bai 1</title>
+</head>
+<body>
+<script>
+    let rowarr=parseInt(prompt("nhập vào số hàng của Mảng: "));
+    let colarr=parseInt(prompt("nhập vào số cột của Mảng: "));
+    let myarr=new Array(rowarr);
+    for (let x=0;x<myarr.length;x++){
+        myarr[x]= new Array(colarr);
+        for(let y=0;y<myarr[x].length;y++){
+            let num = prompt("Nhập vào phần tử của mảng myarr có tọa độ [x]: "+ x+ " [y]: "+y);
+            myarr[x][y]=num;
+        }
+    }
+    for (let x=0;x<myarr.length;x++) {
+        for (let y = 0; y < myarr[x].length; y++) {
+            document.write(myarr[x][y] + " ")
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Case study] Ve hinh</title>
+</head>
+<body>
+<h3>Bài 1: Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m theo hình dưới đây.</h3>
+<span>Nhập chiều dài:</span>
+<input id="leng"/><br>
+<span>Nhập chiều rộng:</span>
+<input id="weight"/><br>
+<button onclick="draw1()">Draw</button>
+
+<h3>Bài 2: Vẽ tam giác vuông cân rỗng có chiều cao h.</h3>
+<span>Nhập chiều cao h:</span>
+<input id="height2"/><br>
+<button onclick="draw2()">Draw</button>
+
+<h3>Bài 3: Vẽ tam giác cân đặc có chiều cao h.</h3>
+<span>Nhập chiều cao h:</span>
+<input id="height3"/><br>
+<button onclick="draw3()">Draw</button>
+
+<h3>Bài 4: Vẽ tam giác cân rỗng có chiều cao h.</h3>
+<span>Nhập chiều cao h:</span>
+<input id="height4"/><br>
+<button onclick="draw4()">Draw</button>
+
+<script>
+    function draw1() {
+        let n = parseInt(document.getElementById('weight').value);
+        let m = parseInt(document.getElementById('leng').value);
+        for (let i = 1; i <= n; i++) {
+            document.write("<br>");
+            for (let j = 1; j <= m; j++) {
+                if (i === 1 || i === n) {
+                    document.write("*");
+                } else if (j === 1 || j === m) {
+                    document.write("*");
+                } else {
+                    document.write("&nbsp&nbsp");
+                }
+            }
+        }
+    }
+
+    function draw2() {
+        let h = parseInt(document.getElementById('height2').value);
+        for (let i = 1; i <= h; i++) {
+            document.write("<br>");
+            for (let j = 1; j <= i; j++) {
+                if (i === h) {
+                    document.write("*");
+                } else if (j === 1 || j === i) {
+                    document.write("*");
+                } else {
+                    document.write("&nbsp&nbsp");
+                }
+            }
+        }
+    }
+
+    function draw3() {
+        let h = parseInt(document.getElementById('height3').value);
+        for (let i = h; i >= 1; i--) {
+            document.write("<br>");
+            for (let j = 1; j <= i; j++) {
+                document.write("&nbsp&nbsp");
+            }
+            for (let k = h; k >= i; k--) {
+                document.write("*");
+            }
+            for (let m = h; m > i; m--) {
+                document.write("*");
+            }
+        }
+    }
+
+    function draw4() {
+        let h = parseInt(document.getElementById('height4').value);
+        for (let i = h; i >= 1; i--) {
+            document.write("<br>");
+            for (let j = 1; j <= i; j++) {
+                document.write("&nbsp&nbsp");
+            }
+            for (let k = h; k >= i; k--) {
+                if (i === 1) {
+                    document.write("*");
+                } else if (k === h) {
+                    document.write("*");
+                } else {
+                    document.write("&nbsp&nbsp");
+                }
+            }
+            for (let m = 5; m > i; m--) {
+                if (i === 1) {
+                    document.write("*");
+                }else if (m===(i+1)){
+                    document.write("*");
+            }else {
+                    document.write("&nbsp&nbsp");
+                }
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>

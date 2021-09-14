@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 2 ( If và switch case)</title>
+</head>
+<body>
+<h4>Bài 1:Nhập lương nhân viên, tính thuế thu nhập và lương ròng</h4>
+<span>Nhập lương nhân viên (đơn vị tính triệu đồng):</span>
+<input id="salary"><br>
+<p>Thuế TNCN của nhân viên là: <span id="tax"></span></p>
+<p>Lương ròng của nhân viên là: <span id="income"></span></p>
+<button onclick="cal()">Tính</button>
+
+<h4>Bài 2:Kiểm tra một ký tự trong bảng chữ cái tiếng anh là nguyên âm hay phụ âm</h4>
+<span>Nhập vào ký tự cần kiểm tra:</span>
+<input id="char"><br>
+<p>Kết quả: <span id="check"></span></p>
+<button onclick="check()">Kiểm tra</button>
+
+<script>
+    function cal() {
+        let salary = parseInt(document.getElementById('salary').value);
+        let tax;
+        let income;
+        if (salary >= 15) {
+            tax = salary * 0.2;
+        } else if (salary >= 7) {
+            tax = salary * 0.1;
+        } else {
+            tax = salary * 0.05;
+        }
+        income = salary - tax;
+        document.getElementById('tax').innerHTML = tax;
+        document.getElementById('income').innerHTML = income;
+    }
+
+    function check() {
+        let char = document.getElementById('char').value;
+        console.log(char);
+        console.log(typeof char);
+        if (char === "o" || char === "O" || char === "u" || char === "U" || char === "i" || char === "I" || char === "a" || char === "A" || char === "e" || char === "E") {
+            document.getElementById('check').innerHTML = char + " là nguyên âm";
+        } else {
+            document.getElementById('check').innerHTML = char + " là phụ âm";
+        }
+
+    }
+
+</script>
+</body>
+</html>

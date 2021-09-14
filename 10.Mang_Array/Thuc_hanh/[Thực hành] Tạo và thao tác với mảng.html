@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Tạo và thao tác với mảng</title>
+</head>
+<body>
+<h4>[Thực hành] Tạo và thao tác với mảng</h4>
+<p>Nhập vào phần tử muốn thêm vào Mảng:</p>
+<input id="input"><button onclick="add()">Add</button><button onclick="display()">Display</button>
+<p>Kết quả:</p>
+<span id="result"></span>
+
+<script>
+    // Cách 1: dùng hàm bình thường
+
+    // let array1=[];
+    // function add() {
+    //     array1.push(document.getElementById('input').value);
+    //     console.log(array1)
+    // }
+    // function display() {
+    //     let e = "<hr/>";
+    //     for (let i in array1) {
+    //         e += "Element " + i + " = " + array1[i] + "<br>";
+    //     }
+    //     document.getElementById('result').innerHTML = e;
+    // }
+
+//Cách 2: không dùng hàm
+    let x=0;
+    let array1=[];
+    function add() {
+        array1[x]= document.getElementById('input').value;
+        alert("Element: "+array1[x]+"Added at index " +x);
+        x++;
+        document.getElementById('input').value="";
+    }
+    function display() {
+        let e = "<hr/>";
+        for (let i in array1) {
+            e += "Element " + i + " = " + array1[i] + "<br>";
+        }
+        document.getElementById('result').innerHTML = e;
+
+</script>
+</body>
+</html>

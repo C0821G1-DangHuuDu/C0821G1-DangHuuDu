@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vi du</title>
+</head>
+<body>
+<h1><strong> Ð? thu?t toán</strong></h1>
+<span>Nh?n nút "Thêm" d? nh?p vào m?ng ký t?:</span>
+<br>
+<button onclick="add()">Thêm</button>
+<button onclick="display()">Tính</button>
+<br>
+<span>Nh?p vào s? c?n ki?m tra:</span>
+<input id="input">
+<p>S? l?n s? <span id="num"></span> xu?t hi?n trong chu?i là : <span id="sum"></span> l?n</p>
+<script>
+    let arrnum = new Array();
+    let num;
+    let count = 0;
+
+    function add() {
+        while(num!==-1) {
+            let i=arrnum.length;
+            num = parseInt(prompt("B?n hãy nh?p s? th? " + (i + 1)));
+            arrnum[i] = num;
+        }
+    }
+    function display() {
+        let a=parseInt(document.getElementById('input').value);
+        for(i=0;i<arrnum.length;i++){
+            if(a===arrnum[i]){
+                count +=1;
+            }
+        }
+        document.getElementById('num').innerText=a;
+        document.getElementById('sum').innerText=count;
+    }
+</script>
+</body >
+</html>

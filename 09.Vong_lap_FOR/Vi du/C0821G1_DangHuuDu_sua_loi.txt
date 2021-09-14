@@ -1,0 +1,24 @@
+<script>
+
+    let number = parseInt(prompt("Nh?p s? c?n ki?m tra: "));
+    // Bi?n check d? ki?m tra có ph?i là s? nguyên t? hay không
+    let check = true;
+    if (number < 2){
+        alert("Không ph?i s? nguyên t?");
+    } else {
+        //S? d?ng vòng l?p d? xét, n?u number chia h?t cho s? nào t? 2 t?i number - 1 thì không ph?i là s? nguyên t?.
+        for (let i = 2; i < number; i++ ){
+            if (number % i === 0){
+                check = false;
+                break;
+            }
+        }
+    }
+    // Ki?m tra check là true hay false
+    if (check){
+        alert("Là s? nguyên t?")
+    } else {
+        alert("Không ph?i s? nguyên t?");
+    }
+
+</script>
