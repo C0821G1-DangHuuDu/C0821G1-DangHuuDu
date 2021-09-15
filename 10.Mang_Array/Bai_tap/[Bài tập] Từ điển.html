@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Từ điển</title>
+</head>
+<body>
+<span>Nhập từ cần tra</span>
+<input id="word">
+<button onclick="searchword()">Tra từ</button>
+<p>Kết quả:<span id="display"></span></p>
+
+<script>
+    let arrEng = ["go", "take", "get", "yes", "no", "lent", "read", "write", "book", "school"];
+    let arrViet = ["đi", "cầm, lấy", "đưa", "có", "không", "mượn", "đọc","viết", "sách", "trường"];
+    let index;
+
+    function searchword() {
+        let word = document.getElementById('word').value;
+        for (i = 0; i < arrEng.length; i++) {
+            if (arrEng[i] === word) {
+                index = arrEng.indexOf(word);
+                document.getElementById('display').innerHTML = arrViet[index];
+                break;
+            } else {
+                document.getElementById('display').innerHTML = "Not found";
+            }
+        }
+
+    }
+
+</script>
+</body>
+</html>

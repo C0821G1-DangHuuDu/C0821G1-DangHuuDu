@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập mảng 02 Bai 5</title>
+</head>
+<body>
+<script>
+    let str1 = prompt("Nhập chuỗi 1: ");
+    let str2 = prompt("Nhập chuỗi 2: ");
+    let arra = str1.split("");
+    let arrb = str2.split("");
+    let check = true;
+    if (arra.length !== arrb.length) {
+        alert("2 chuỗi đã nhập khác nhau");
+    } else {
+        for (let i = 0; i < arra.length; i++) {
+            if (arrb[i] !== arra[i]) {
+                check = false;
+                break;
+            } else {
+                check = true;
+            }
+        }
+        if (check) {
+            alert("2 mảng đã nhập giống nhau");
+        } else {
+            alert("2 mảng đã nhập khác nhau");
+        }
+    }
+
+</script>
+</body>
+</html>

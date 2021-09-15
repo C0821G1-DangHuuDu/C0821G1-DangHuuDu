@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập mảng 02 Bai 3</title>
+</head>
+<body>
+<h4>Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. <br>
+    Chương trình này đếm số ký tự số trong mảng.<br>
+    Bài 4: Viết một chương trình để đếm số từ trong một chuỗi</h4>
+<span>Nhập vào kích thước của Mảng:</span>
+<input id="qualtity">
+<span>Nhập vào các phần tử của mảng:</span>
+<br>
+<button onclick="add()">Thêm</button>
+<button onclick="arrangenum()">Đếm số</button>
+<button onclick="arrangechar()">Đếm chữ</button>
+<p>Số ký tự số trong mảng là: <span id="sumnum"></span></p>
+<p>Số ký tự chữ trong mảng là: <span id="sumchar"></span></p>
+<script>
+    let arrnum = new Array();
+    let num;
+    let countnum=0;
+    let countchar=0;
+    function add() {
+        arrnum = new Array(parseInt(document.getElementById('qualtity').value));
+        for (let i = 0; i < arrnum.length; i++) {
+            num = prompt("Bạn hãy nhập số thứ " + (i + 1));
+            arrnum[i] = num;
+        }
+    }
+
+//Bài 3
+    function arrangenum() {
+        for (i=(arrnum.length-1);i>=0;i--){
+            if(parseInt(arrnum[i])%1===0){
+                countnum+=1;
+            }
+        }
+        document.getElementById('sumnum').innerHTML=countnum;
+        console.log(arrnum);
+    }
+
+//Bài 4
+    function arrangechar() {
+        for (i=(arrnum.length-1);i>=0;i--){
+            if(parseInt(arrnum[i])%1!==0){
+                countchar+=1;
+            }
+        }
+        document.getElementById('sumchar').innerHTML=countchar;
+        console.log(arrnum);
+    }
+</script>
+</body>
+</html>

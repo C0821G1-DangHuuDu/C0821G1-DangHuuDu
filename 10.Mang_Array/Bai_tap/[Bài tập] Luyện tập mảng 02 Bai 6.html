@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập mảng 02 Bai 6</title>
+</head>
+<body>
+<script>
+    let arra = new Array(6);
+    let arrb=new Array(6);
+
+    for (let i = 0; i < arra.length; i++) {
+        let num = (prompt("Nhập vào mảng a ký tự thứ " + (i + 1)));
+        arra[i] = num;
+    }
+    console.log(arra);
+    //Cách 1:
+    for(let i = 0; i < arra.length; i++) {
+        if (arra[i]=='-'){
+            arrb[i]='+';
+        }else {
+            arrb[i]=arra[i]
+        }
+    }
+    console.log(arrb);
+    // Cách 2:
+    dùng hamg
+</script>
+</body>
+</html>

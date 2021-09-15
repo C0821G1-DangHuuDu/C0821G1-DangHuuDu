@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 3 (Mảng và Loop) Bai 1</title>
+</head>
+<body>
+<h4>Bài 1: Cho mảng a chỉ chứa các số nguyên....</h4>
+<script>
+    let arrA=new Array(3);
+    let arrB=new Array(3);
+    let sum=0;
+    for (let i = 0; i < arrA.length; i++) {
+        let num = parseInt(prompt("Nhập vào mảng a ký tự thứ " + (i + 1)));
+        arrA[i] = num;
+    }
+    console.log(arrA);
+    for(let i=0;i<arrB.length;i++){
+        sum=0;
+        for(let j=0;j<=i;j++){
+            sum+=arrA[j];
+            arrB[i]=sum;
+        }
+    }
+    console.log(arrB);
+</script>
+</body>
+</html>
