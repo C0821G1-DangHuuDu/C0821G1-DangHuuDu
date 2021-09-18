@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b8ba3cea-3163-4c68-b680-063db159fb75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Bai_tap/[Bài tập] Luyện tập mảng 02 Bai 1.html" beforeDir="false" afterPath="$PROJECT_DIR$/10.Mang_Array/Bai_tap/[Bài tập] Luyện tập mảng 02 Bai 1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Vi_du/Vi du.html" beforeDir="false" afterPath="$PROJECT_DIR$/10.Mang_Array/Vi_du/Vi du.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Bai_tap/[Bài tập] Luyện tập mảng 02 Bai 4.html" beforeDir="false" afterPath="$PROJECT_DIR$/10.Mang_Array/Bai_tap/[Bài tập] Luyện tập mảng 02 Bai 4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Casestudy/êu cầu 3 (Mảng và Loop) Bai 4.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +101,14 @@
       <workItem from="1631668395237" duration="13015000" />
       <workItem from="1631687946309" duration="10218000" />
       <workItem from="1631708567889" duration="5212000" />
+      <workItem from="1631738944705" duration="2054000" />
+      <workItem from="1631753141811" duration="7525000" />
+      <workItem from="1631773794864" duration="2530000" />
+      <workItem from="1631830098845" duration="3179000" />
+      <workItem from="1631839253689" duration="8656000" />
+      <workItem from="1631860112370" duration="8305000" />
+      <workItem from="1631883843709" duration="2722000" />
+      <workItem from="1631930791735" duration="13123000" />
     </task>
     <servers />
   </component>
@@ -108,6 +116,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="21" key="#Inspections" timestamp="1631939501798">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1631939501798" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1631243028413">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -184,5 +196,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="85" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631248661980" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1631865655338">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1631865655338" />
   </component>
 </project>

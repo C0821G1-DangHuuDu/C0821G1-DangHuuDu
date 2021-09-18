@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 01 Bài 5</title>
+</head>
+<body>
+<h3>Bài 5: Tạo một mảng với bảy phần tử dạng chuỗi có giá trị là tên các ngôi sao. <br>
+    trả lại tên các chòm sao tương ứng chứa các ngôi sao đó.</h3>
+<span>Nhập tên ngôi sao bạn cần tìm:</span>
+<button onclick="findStar()">Start</button>
+<p>Chòm sao tương ứng với ngôi sao bạn chọn là: <span id="result"></span></p>
+
+<script>
+    let arrName = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrStar = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function getStar(name) {
+        let star;
+        let index;
+        let check=true;
+        for (i = 0; i < arrName.length; i++) {
+            if (name === arrName[i]){
+                index = arrName.indexOf(name);
+                star = arrStar[index];
+                check=true;
+                break;
+            } else {
+                check=false;
+            }
+        }
+        if(check==false){
+            star= "Không tìm thấy tên ngôi sao bạn cần tìm"
+        }
+        return star
+    }
+    function findStar() {
+        let name = prompt("Nhập tên ngôi sao:");
+        let star;
+        star=getStar(name);
+        document.getElementById('result').innerHTML=star;
+    }
+
+</script>
+</body>
+</html>

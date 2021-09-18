@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02 Bài 8</title>
+</head>
+<body>
+<h3>Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</h3>
+
+
+<script>
+    function makeArray(arr) {
+        let leng=parseInt(prompt("Nhập vào độ dài của mảng cần tạo"));
+        arr=new Array(leng);
+        for(i=0;i<arr.length;i++){
+            arr[i]=parseInt(prompt("Nhập vào phần tử thứ "+(i+1)));
+        }
+        arr=arr.reverse();
+
+        document.write("Mảng sau khi đảo ngược là: " + arr);
+    }
+    makeArray();
+</script>
+</body>
+</html>

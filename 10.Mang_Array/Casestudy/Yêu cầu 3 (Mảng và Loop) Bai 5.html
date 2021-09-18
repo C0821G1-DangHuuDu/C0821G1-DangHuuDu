@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 3 (Mảng và Loop) Bai 5</title>
+</head>
+<body>
+<h3>Menu</h3>
+<ol>
+    <li>Cafe</li>
+    <li>Cam vắt</li>
+    <li>Nước ép cà rốt</li>
+    <li>Nước ép cà chua</li>
+    <li>Nước lọc</li>
+    <li>Nước dừa</li>
+    <li>Thoát gọi món</li>
+</ol>
+<br>
+<span>Mời bạn bấm số chọn món:</span>
+<input oninput="order()" id="input"><br>
+<p>Món bạn đã chọn:<span id="display"></span></p>
+<p>Đơn giá:<span id="cost"></span></p>
+<p>Số tiền bạn cần thanh toán:<span id="total"></p>
+
+
+<script>
+    let arrnum = [1, 2, 3, 4, 5, 6];
+    let arrname = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
+    let arrcost = [7000, 15000, 15000, 15000, 10000, 20000];
+
+    function order() {
+        let num = parseInt(document.getElementById('input').value);
+        let qualtity;
+        let index;
+        let cost;
+        let total;
+        if (num < 7) {
+            qualtity = parseInt(prompt("Nhập số lượng bạn muốn gọi là: "));
+        } else {
+            alert("Bạn đã thoát gọi món: ")
+        }
+        // console.log(qualtity);
+        // console.log(num);
+        for (i = 0; i < arrnum.length; i++) {
+            if (arrnum[i] == num) {
+                index = arrnum.indexOf(num);
+                // console.log(index);
+                cost = arrcost[index];
+                // console.log(cost);
+                document.getElementById('display').innerHTML = arrname[index];
+                document.getElementById('cost').innerHTML = arrcost[index];
+            }
+        }
+        total = qualtity * cost;
+        document.getElementById('total').innerHTML = total
+
+
+    }
+
+
+</script>
+</body>
+</html>

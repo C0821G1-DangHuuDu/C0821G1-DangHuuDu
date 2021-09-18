@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02 Bài 1,2,3,4</title>
+</head>
+<body>
+<h3>Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</h3>
+<span>Nhập vào số cần tính bình phương</span>
+<input id="num1"><br>
+<p>Kết quả là: <span id="result1"></span></p>
+<button onclick="tinhbinhphuong()">Tính</button>
+
+<h3>Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được</h3>
+<span>Nhập vào bán kính hình tròn:</span>
+<input id="num2"><br>
+<p>Kết quả là: <span id="result2"></span></p>
+<button onclick="tinhbai2()">Tính</button>
+
+<h3>Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào.</h3>
+<span>Nhập vào số nguyên cần tính:</span>
+<input id="num3"><br>
+<p>Kết quả là: <span id="result3"></span></p>
+<button onclick="tinhbai3()">Tính</button>
+
+<h3>Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.</h3>
+<span>Nhập vào số nguyên cần kiểm tra:</span>
+<input id="num4"><br>
+<p>Kết quả là: <span id="result4"></span></p>
+<button onclick="tinhbai4()">Tính</button>
+
+<script>
+    //Bai 1:
+    function calculatesqr(num) {
+        let sqr = num * num;
+        return sqr;
+    }
+
+    function tinhbinhphuong() {
+        let num = parseInt(document.getElementById('num1').value);
+        let result;
+        result1 = calculatesqr(num);
+        document.getElementById('result1').innerHTML = result1;
+    }
+
+    //Bai 2:
+    function tinhShinhtron(bk) {
+        let S;
+        const PI = 3.14;
+        S = PI * bk * bk;
+        return S;
+    }
+
+    function tinhChinhtron(bk) {
+        let C;
+        const PI = 3.14;
+        C = PI * 2 * bk;
+        return C;
+    }
+
+    function tinhbai2() {
+        let num = parseInt(document.getElementById('num2').value);
+        let DT;
+        let CV;
+        DT = tinhShinhtron(num);
+        CV = tinhChinhtron(num);
+        document.getElementById('result2').innerHTML = "Diện tích là: " + DT + " và chu vi là: " + CV;
+    }
+
+    //Bài 3:
+    function tinhgiaithua(num) {
+        let primorial = 1;
+        for (let i = 1; i <= num; i++) {
+            primorial = primorial * i;
+        }
+        return primorial;
+    }
+
+    function tinhbai3() {
+        let num = parseInt(document.getElementById('num3').value);
+        let primorial;
+        primorial = tinhgiaithua(num);
+        document.getElementById('result3').innerHTML = "Giai thừa của " + num + " là " + primorial;
+    }
+
+    //Bài 4:
+    function checknum(num) {
+        let check;
+        console.log(num);
+        if (isNaN(num)){
+            check = false
+        } else {
+            check = true
+        }
+        console.log(isNaN(num));
+        return check
+    }
+    function tinhbai4() {
+        let num = document.getElementById('num4').value;
+        let check;
+        check = checknum(num);
+        console.log(check);
+        document.getElementById('result4').innerHTML = check;
+    }
+
+
+</script>
+
+</body>
+</html>

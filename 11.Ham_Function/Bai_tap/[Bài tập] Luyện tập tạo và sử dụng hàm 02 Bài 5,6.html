@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02 Bài 5,6</title>
+</head>
+<body>
+<h3>Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</h3>
+<button onclick="timMin()">Click Me.</button>
+
+<h3>Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. <br>
+    Nếu là nguyên dương trả về true, ngược lại trả về false.</h3>
+<span>Nhập vào số cần kiểm tra</span>
+<input id="num6"><br>
+<p>Kết quả là: <span id="result6"></span></p>
+
+<button onclick="checkNum()">Kiểm tra</button>
+
+<script>
+//Bài 5:    
+    function min3Num() {
+        let a = parseInt(prompt("Nập vào số thứ nhất: "));
+        let b = parseInt(prompt("Nập vào số thứ hai: "));
+        let c = parseInt(prompt("Nập vào số thứ ba: "));
+        let min;
+        if (a<b&&a<c){
+            min =a;
+        } else if (b<a&&b<c){
+            min = b;
+        }else {
+            min =c;
+        }
+        alert("Số có giá trị nhỏ nhất là: "+min);
+        return min;
+    }
+    function timMin() {
+        min3Num();
+    }
+    
+// Bài 6:
+    function kiemtra(num) {
+        let check;
+        if(num>=0){
+            check = true;
+        } else {
+            check =false;
+        }
+        return check;
+    }
+    function checkNum() {
+        let num=parseInt(document.getElementById('num6').value);
+        let check;
+        check=kiemtra(num);
+        document.getElementById('result6').innerHTML=check;
+    }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<h3>Change froom Foot to Meter:</h3>
+<p>Type a value in the Foot field to conver the value to Meter:</p>
+<form>
+    <p>
+        <label>Foot</label>
+        <input id="inputFoot" type="number" placeholder="Foot"
+               oninput="footConverter(this.value)"
+               onchange="footConverter(this.value)">
+    </p>
+    <p>Meter: <span id="outputMeter"></span></p>
+</form>
+<h3>Change froom Meter to Foot:</h3>
+<p>Type a value in the Meter field to conver the value to Foot:</p>
+<form>
+    <p>
+        <label>Meter</label>
+        <input id="inputmeter" type="number" placeholder="Meter"
+               oninput="meterConverter(this.value)"
+               onchange="meterConverter(this.value)">
+    </p>
+    <p>Foot: <span id="outputFoot"></span></p>
+</form>
+<script>
+    function footToMeter(foot) {
+        let meter=0.305 * foot;
+        return meter
+    }
+    function meterToFoot(meter) {
+        let foot=3.279 * meter;
+        return foot
+    }
+    function footConverter(valNum) {
+        valNum = parseFloat(valNum);
+        let meter = footToMeter(valNum);
+        document.getElementById('outputMeter').innerHTML=meter;
+
+    }
+    function meterConverter(valNum) {
+        valNum = parseFloat(valNum);
+        let foot = meterToFoot(valNum);
+        document.getElementById('outputFoot').innerHTML=foot;
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 01 Bài 1,2,3</title>
+</head>
+<body>
+<h4>Bài 1: Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi  "Xin chao". Gọi hàm từ trong phần body của trang web.</h4>
+<button onclick="chamtoi()">Click Me!</button>
+<h4>Bài 2: Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.</h4>
+<p>Type a number:</p>
+<input id="inputnum" type="number" placeholder="Number"
+       oninput="calculateNum(this.value)"
+       onchange="calculateNum(this.value)">
+<p>Kết quả: <span id="result"></span></p>
+<h3>Bài 3: Tạo hàm nhận vào hai tham số.</h3>
+<button onclick="clickme()">Click Me!</button>
+
+<script>
+    //Bài 1:
+    function callMess() {
+        alert("Hello everybody")
+    }
+    function chamtoi() {
+        callMess()
+    }
+
+    //Bài 2:
+    function addOne(num) {
+        num++;
+        return num;
+    }
+    function calculateNum(inputnum) {
+        inputnum = parseInt(inputnum);
+        let result = addOne(inputnum);
+        document.getElementById('result').innerHTML=result;
+    }
+
+    //Bài 3:
+    function calculateSum(a,b) {
+        a = parseInt(prompt("Nhập vào số A: "));
+        b = parseInt(prompt("Nhập vào số B: "));
+        let sum;
+        if (a>b){
+            alert("Bạn nhập số A lớn hơn B")
+        } else {
+            sum=a+b;
+            alert("Tổng của 2 số A và B là: "+sum)
+        }
+
+        return sum
+    }
+    let A;
+    let B;
+    function clickme(A,B) {
+        calculateSum(A,B)
+    }
+</script>
+
+</body>
+</html>
