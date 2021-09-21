@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 4 (String) Bai 2</title>
+</head>
+<body>
+<script>
+    let str = "ccabacadddcfghgf";
+    let arr = str.split("");
+    let arr1 = [];
+    console.log(arr);
+    for (i = 0; i < arr.length; i++) {
+        for (j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                delete arr[i];
+                break;
+            }
+        }
+    }
+    // for (i = 0; i < arr.length; i++) {
+    //     if (arr[i] === "") {
+    //         arr.splice(i, 1);
+    //         i--
+    //     }
+    // }
+    arr=arr.filter(deleteRong);
+    function deleteRong(item){
+        return item !=""
+    }
+    document.write("số ký tự khác nhau trong chuỗi là: " + arr.length+"<br>");
+    document.write("Các ký tự khác nhau trong chuỗi là: " + arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 4 (String) Bai 3</title>
+</head>
+<body>
+
+<script>
+    let str1="aaaaabcdddc";
+    let str2="aaaddbbbcaa";
+    let arr1=str1.split('');
+    let arr2=str2.split('');
+    let arr3=[];
+    // for(i=0;i<arr1.length;i++){
+    //
+    //     for(j=0;j<arr2.length;j++){
+    //         if(arr1[i]==arr2[j]){
+    //             arr3.push(arr1[i]);
+    //             arr1.splice(i,1);
+    //             arr2.splice(j,1);
+    //             j--;
+    //
+    //         }
+    //     }
+    // }
+    for(i=0;i<arr1.length;i++){
+        for(j=0;j<arr2.length;j++){
+            if(arr1[i]==arr2[j]){
+                arr3.push(arr1[i]);
+                delete arr1[i];
+                delete arr2[j];
+
+            }
+        }
+    }
+    arr3=arr3.filter(deleteRong);
+    function deleteRong(item){
+        return item !=undefined
+    }
+    console.log(arr1);
+    console.log(arr2);
+    console.log(arr3);
+    document.write("số phần tử trùng nhau của 2 mảng là: "+ arr3.length)
+
+
+
+
+</script>
+
+</body>
+</html>

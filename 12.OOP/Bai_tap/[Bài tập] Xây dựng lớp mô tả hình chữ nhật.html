@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;">
+    <script>
+        class Rectangle {
+            constructor(dai, rong) {
+                this.dai = dai;
+                this.rong = rong;
+            }
+
+            getDai() {
+                return this.dai;
+            }
+
+            getRong() {
+                return this.rong;
+            }
+
+            getDientich() {
+                return this.dai * this.rong;
+            }
+
+            getChuvi() {
+                return 2 * (this.dai + this.rong)
+            }
+
+            drawRect(x, y, dai, rong) {
+                var rect = document.getElementById('myCanvas').getContext("2d");
+                rect.beginPath();
+                rect.rect(x, y, dai, rong);
+                rect.fill();
+            }
+        }
+
+        let rect = new Rectangle(8, 3);
+        let dai = rect.getDai();
+        let rong = rect.getRong();
+        let area = rect.getDientich();
+        let chuvi = rect.getChuvi();
+        document.write("Chiều dài hình chữ nhật là: " + dai);
+        document.write("<br>");
+        document.write("Chiều rộng hình chữ nhật là: " + rong);
+        document.write("<br>");
+        document.write("Diện tích hình chữ nhật là: " + area);
+        document.write("<br>");
+        document.write("Chu vi hình chữ nhật là: " + chuvi);
+        document.write("<br>");
+        rect.drawRect(100, 100, 100, 50);
+    </script>
+</body>
+</html>
