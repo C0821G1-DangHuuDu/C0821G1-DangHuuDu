@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b8ba3cea-3163-4c68-b680-063db159fb75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Bai_tap/[Bài tập] Sử dụng các hàm có sẵn của mảng Bai 3.html" beforeDir="false" afterPath="$PROJECT_DIR$/10.Mang_Array/Bai_tap/[Bài tập] Sử dụng các hàm có sẵn của mảng Bai 3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Casestudy/Yêu cầu 3 (Mảng và Loop) Bai 1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Casestudy/Yêu cầu 3 (Mảng và Loop) Bai 2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Casestudy/Yêu cầu 3 (Mảng và Loop) Bai 3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Casestudy/Yêu cầu 3 (Mảng và Loop) Bai 4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Casestudy/Yêu cầu 3 (Mảng và Loop) Bai 5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10.Mang_Array/Vi_du/Vi du.html" beforeDir="false" afterPath="$PROJECT_DIR$/10.Mang_Array/Vi_du/Vi du.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.OOP/Bai_tap/[Bài tập] Xây dựng lớp mô tả hình chữ nhật.html" beforeDir="false" afterPath="$PROJECT_DIR$/12.OOP/Bai_tap/[Bài tập] Xây dựng lớp mô tả hình chữ nhật.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12.OOP/Bai_tap/[Bài tập] Xây dựng lớp mô tả điện thoại.html" beforeDir="false" afterPath="$PROJECT_DIR$/12.OOP/Bai_tap/[Bài tập] Xây dựng lớp mô tả điện thoại.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +113,8 @@
       <workItem from="1632101489111" duration="10567000" />
       <workItem from="1632119693276" duration="13048000" />
       <workItem from="1632195958891" duration="13542000" />
-      <workItem from="1632228201144" duration="2600000" />
+      <workItem from="1632228201144" duration="4673000" />
+      <workItem from="1632272957393" duration="17552000" />
     </task>
     <servers />
   </component>
@@ -134,6 +130,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1631243028413" />
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1632304708074">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1632304708074" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1631031001527">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -206,9 +206,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="85" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631248661980" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1631865655338">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1632295547418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1631865655338" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1632295547418" />
   </component>
 </project>

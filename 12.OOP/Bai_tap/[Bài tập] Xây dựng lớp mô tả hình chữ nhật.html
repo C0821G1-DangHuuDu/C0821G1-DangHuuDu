@@ -5,7 +5,7 @@
     <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
 </head>
 <body>
-<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;">
+<canvas id="myCanvas" width="1368px" height="768px">
     <script>
         class Rectangle {
             constructor(dai, rong) {
@@ -20,7 +20,12 @@
             getRong() {
                 return this.rong;
             }
-
+            setDai(value){
+                this.dai=value;
+            }
+            setRong(value){
+                this.rong=value;
+            }
             getDientich() {
                 return this.dai * this.rong;
             }
@@ -37,20 +42,20 @@
             }
         }
 
-        let rect = new Rectangle(8, 3);
+        let rect = new Rectangle(50, 20);
         let dai = rect.getDai();
         let rong = rect.getRong();
         let area = rect.getDientich();
         let chuvi = rect.getChuvi();
-        document.write("Chiều dài hình chữ nhật là: " + dai);
-        document.write("<br>");
-        document.write("Chiều rộng hình chữ nhật là: " + rong);
-        document.write("<br>");
-        document.write("Diện tích hình chữ nhật là: " + area);
-        document.write("<br>");
-        document.write("Chu vi hình chữ nhật là: " + chuvi);
-        document.write("<br>");
-        rect.drawRect(100, 100, 100, 50);
+        console.log("Chiều dài hình chữ nhật là: " + dai);
+        console.log("<br>");
+        console.log("Chiều rộng hình chữ nhật là: " + rong);
+        console.log("<br>");
+        console.log("Diện tích hình chữ nhật là: " + area);
+        console.log("<br>");
+        console.log("Chu vi hình chữ nhật là: " + chuvi);
+        console.log("<br>");
+        rect.drawRect(100, 100, dai, rong);
     </script>
 </body>
 </html>

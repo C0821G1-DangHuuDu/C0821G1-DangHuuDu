@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Phát triển chương trình thể hiện sự tương tác giữa hai đối tượng la công tắc và bóng đèn</title>
+</head>
+<body>
+<script>
+    class ElectricLamp{
+        constructor() {
+            this.statusLamp=false;
+        }
+
+        getStatus() {
+            return this.statusLamp;
+        }
+        checkStatus() {
+           if (this.statusLamp===false){
+               console.log("Đèn đang tắt");
+           }else {
+               console.log("Đèn đang bật")
+           };
+        }
+        setStatus(check){
+            if(check===true){
+                this.statusLamp=true;
+            }else {
+                this.statusLamp=false;
+            }
+        }
+    }
+    class SwitchButton{
+        constructor() {
+            this.statusButton=false;
+            this.lamp=new ElectricLamp();
+        }
+
+        getStatus() {
+            return this.statusButton;
+        }
+
+        getLamp() {
+            return this.lamp.getStatus();
+        }
+        conectToLamp(){
+           return this.statusButton
+
+        }
+        switchOn(){
+            if(this.statusButton===false){
+                let check = confirm("Bạn có muốn bật đèn không?");
+                if(check){
+                    this.statusButton=true;
+                }else {
+                    alert("Công tắc đang tắt")
+                }
+            }
+        }
+        switchOff(){
+            if(this.statusButton===true){
+                let check = confirm("Bạn có muốn tắt đèn không?");
+                if(check){
+                    this.statusButton=false;
+                }else {
+                    alert("Công tắc đang bật")
+                }
+            }
+        }
+    }
+    let switchButton=new SwitchButton();
+    let lamp=new ElectricLamp();
+
+
+    console.log("Trạng thái ban đầu của bóng đèn "+lamp.getStatus());
+    console.log("Trạng thái ban đầu của công tắc "+switchButton.getStatus());
+    switchButton.switchOn();
+    let check=switchButton.conectToLamp();
+    lamp.setStatus(check);
+    console.log("Trạng thái sau khi bật của bóng đèn "+lamp.getStatus());
+    console.log("Trạng thái sau khi bật công tắc "+switchButton.getStatus());
+    lamp.checkStatus();
+    switchButton.switchOff();
+    check=switchButton.conectToLamp();
+    lamp.setStatus(check);
+    console.log("Trạng thái sau khi bật của bóng đèn "+lamp.getStatus());
+    console.log("Trạng thái sau khi bật công tắc "+switchButton.getStatus());
+    lamp.checkStatus();
+
+</script>
+</body>
+</html>

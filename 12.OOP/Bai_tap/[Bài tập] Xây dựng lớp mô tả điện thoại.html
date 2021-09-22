@@ -6,11 +6,72 @@
 </head>
 <body>
 <script>
-    class Mobile{
-        constructor(pin,dangsoan,hopthuden,dagui) {
-
+    class Mobile {
+        constructor() {
+            this.pin=100;
+            this.dangsoan=[];
+            this.hopthuden=[];
+            this.dagui=[];
+            this.status=true;
         }
+        getStatus(){
+            return this.status;
+        }
+        setStatus(){
+            if (this.status){
+                let check = confirm("Bạn có muốn tắt điện thoại không!");
+                if (check) {
+                    alert("Đã tắt điện thoại!");
+                    this.status = false;
+                }else {
+                    alert("Đã bặt điện thoại!");
+                    this.status = true;
+                }
+            }
+        }
+        getHopthuden(){
+            return this.hopthuden;
+            this.pin--;
+        }
+        getDagui(){
+            return this.dagui;
+            this.pin--;
+        }
+
+        chargePin(){
+        this.pin=100;
+        }
+        writeMessage(message){
+            return message=prompt("Nhập nội dung tin nhắn:");
+            this.pin--
+        }
+
+        sendMessage(message,receiver){
+            this.dagui.push(message);
+            receiver.receiveMessage(message);
+            this.pin--
+        }
+        receiveMessage(message){
+            this.hopthuden.push(message);
+            this.pin--
+        }
+        checkPin (){
+            if(this.pin==10){
+                alert("Pin còn 10 %");
+            }else if(this.pin==0){
+                alert("Điện thoại hết pin")
+            }
+        }
+
     }
+    let nokia=new Mobile();
+    let iphone=new Mobile();
+    nokia.setStatus();
+    let message=nokia.writeMessage();
+    nokia.sendMessage(message,iphone);
+    document.write("Nokia đã gửi: "+ nokia.getDagui()+"<br>");
+    document.write("Iphone đã nhận: "+ iphone.getHopthuden());
+
 </script>
 </body>
 </html>

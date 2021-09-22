@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Xây dựng lớp mô phỏng sự hoạt động của đèn pin</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor() {
+            this.energy = 100;
+        }
+
+        getEnergy() {
+            return this.energy;
+        }
+
+        setEnergy(value) {
+            this.energy = value;
+        }
+        decreaseEnergy(){
+            if (this.energy>0){
+                this.energy--;
+            }else {
+                alert("Energy empty")
+            }
+        }
+    }
+    class FlashLamp{
+        constructor() {
+            this.status=false;
+            this.battery=new Battery();
+        }
+
+        getStatus() {
+            return this.status;
+        }
+
+        setStatus(value) {
+            this.status = value;
+        }
+
+        getBattery() {
+            return this.battery.getEnergy();
+        }
+        setBattery() {
+            this.battery = new Battery();
+        }
+        turnOn(){
+            if(this.status===false){
+                let check=confirm("Bạn có muốn bật đèn pin không");
+                if(check){
+                    alert("bạn đã bật đèn pin");
+                    this.status=true;
+                    this.battery.decreaseEnergy();
+                }
+            }else {
+                alert("Đèn pin đang bật")
+            }
+        }
+        turnOff(){
+            if(this.status===true){
+                let check=confirm("Bạn có muốn tắt đèn pin không");
+                if(check){
+                    alert("Bạn đã tắt đèn pin");
+                    this.status=false;
+                }
+            }else {
+                alert("Đèn pin đang tắt")
+            }
+        }
+
+    }
+    let flashLamp=new FlashLamp();
+    document.write(flashLamp.getBattery()+"<br>");
+    flashLamp.turnOn();
+    document.write(flashLamp.getBattery()+"<br>");
+</script>
+</body>
+</html>
