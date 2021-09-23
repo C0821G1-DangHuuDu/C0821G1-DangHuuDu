@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 5 (Mảng 2 chiều) Bai 3</title>
+</head>
+<body>
+<script>
+    let m;
+    let n;
+    do {
+        m = parseInt(prompt("nhập vào số dòng của mảng:"))
+    } while (m <= 0 || isNaN(m));
+    do {
+        n = parseInt(prompt("nhập vào số cột của mảng:"))
+    } while (n <= 0 || isNaN(n));
+    let arr = new Array(m);
+    let max;
+    let min;
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = new Array(n);
+        for (j = 0; j < arr[i].length; j++) {
+            arr[i][j] = parseInt(prompt("Nhập vào phần tử có vị trí [" + i + "] [" + j + "]."));
+
+        }
+    }
+    max=arr[0][0];
+    min=arr[0][0];
+    for (let i = 0; i < arr.length; i++) {
+        for (j = 0; j < arr[i].length; j++) {
+            if(arr[i][j]>=max){
+                max=arr[i][j];
+            }
+            if(arr[i][j]<=min){
+                min=arr[i][j];
+            }
+        }
+    }
+    document.write("Giá trị lớn nhất của mảng là: "+max+"<br>");
+    document.write("Giá trị nhỏ nhất của mảng là: "+min+"<br>");
+</script>
+</body>
+</html>

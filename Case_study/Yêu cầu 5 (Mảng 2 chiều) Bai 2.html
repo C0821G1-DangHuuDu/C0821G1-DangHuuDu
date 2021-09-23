@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 5 (Mảng 2 chiều) Bai 2</title>
+</head>
+<body>
+<script>
+    let m;
+    let n;
+    do {
+        m = parseInt(prompt("nhập vào số dòng của mảng:"))
+    } while (m <= 0 || isNaN(m));
+    do {
+        n = parseInt(prompt("nhập vào số cột của mảng:"))
+    } while (n <= 0 || isNaN(n));
+    let arr = new Array(m);
+    let check;
+    let arr1=[];
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = new Array(n);
+        for (j = 0; j < arr[i].length; j++) {
+            arr[i][j] = parseInt(prompt("Nhập vào phần tử có vị trí [" + i + "] [" + j + "]."));
+            if(arr[i][j]<2){
+                check=false;
+            }else if (arr[i][j]==2){
+                arr1.push(arr[i][j]);
+            }
+            for(k=2;k<arr[i][j];k++){
+                if(arr[i][j]%k==0){
+                        check=false;
+                        break;
+                    }else {
+                    check=true;
+                }
+            }
+            if(check===true){
+                arr1.push(arr[i][j]);
+            }
+        }
+    }
+    document.write("Dãy số nguyên trong mảng 2 chiều: "+ arr1+"<br>");
+    document.write("Số lượng các số nguyên trong mảng 2 chiều: "+arr1.length);
+</script>
+</body>
+</html>

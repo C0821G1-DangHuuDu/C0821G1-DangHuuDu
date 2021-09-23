@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu cầu 6 (OOP)</title>
+</head>
+<body>
+<label for="num1">Số 1: <input id="num1"></label><br>
+<label for="num2">Số 2: <input id="num2"></label><br>
+<label for="num3">Số 3: <input id="num3"></label><br>
+<label for="num4">Số 4: <input id="num4"></label><br>
+<label for="num5">Số 5: <input id="num5"></label><br>
+<label for="num6">Số 6: <input id="num6"></label><br>
+<button onclick="muave()">Mua vé</button>
+<button onclick="result()">Xem kết quả</button>
+<script>
+    class Ticket{
+        constructor(num1,num2,num3,num4,num5,num6) {
+            this.num1 = num1;
+            this.num2 = num2;
+            this.num3 = num3;
+            this.num4 = num4;
+            this.num5 = num5;
+            this.num6 = num6;
+        }
+
+        getNum1() {
+            return this.num1;
+        }
+
+        setNum1(value) {
+            this.num1 = value;
+        }
+
+        getNum2() {
+            return this.num2;
+        }
+
+        setNum2(value) {
+            this.num2 = value;
+        }
+
+        getNum3() {
+            return this.num3;
+        }
+
+        setNum3(value) {
+            this.num3 = value;
+        }
+
+        getNum4() {
+            return this.num4;
+        }
+
+        setNum4(value) {
+            this.num4 = value;
+        }
+
+        getNum5() {
+            return this.num5;
+        }
+
+        setNum5(value) {
+            this.num5 = value;
+        }
+
+        getNum6() {
+            return this.num6;
+        }
+
+        setNum6(value) {
+            this.num6 = value;
+        }
+    }
+</script>
+</body>
+</html>
